@@ -99,3 +99,101 @@ button:hover {
     padding: 8px 12px;
   }
 }
+
+
+/* Image Collage */
+.image-collage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.image-collage img {
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-collage img:hover {
+  transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .image-collage {
+    grid-template-columns: repeat(2, 1fr); /* Stack images on smaller screens */
+  }
+
+  .image-collage img {
+    max-width: 120px;
+  }
+}
+
+
+/* Gift Section Styling */
+.gift-section {
+  background: rgba(255, 223, 186, 0.9);
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.3);
+  max-width: 90%;
+  width: 450px;
+}
+
+.gift-input {
+  width: 80%;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #ff6600;
+  border-radius: 5px;
+  text-align: center;
+  outline: none;
+}
+
+.gift-message {
+  font-size: 18px;
+  color: #ff0066;
+  font-weight: bold;
+}
+.error-message {
+  color: red;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.gift-content {
+  text-align: center;
+  padding: 15px;
+}
+
+.voucher-box {
+  background: #fff3cd;
+  padding: 10px;
+  border-radius: 8px;
+  word-wrap: break-word;
+  display: inline-block;
+  max-width: 90%;
+  font-size: 1.2rem;
+}
+
+.voucher-box a {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+.voucher-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+@media (max-width:768px) {
+  .voucher-image{
+  max-width: 150px;
+  }
+}
