@@ -21,7 +21,7 @@ function App() {
   const [dobInput, setDobInput] = useState(""); // State for input field
   const [giftRevealed, setGiftRevealed] = useState(false);
   const correctDOB = "2302"; // Expected DOB format
-  const voucherCode = "https://www.amazon.in/g/gfsgbsbsdb54f?ref=gc_utyp"; // Your gift voucher code
+  const voucherCode = "https://www.amazon.in/g/M7LQDHHSERM3R1R9?ref=gc_utyp"; // Your gift voucher code
   const [error, setError] = useState(""); // State for error message
 
 
@@ -68,7 +68,7 @@ function App() {
       {/* Birthday Message Section */}
       <div ref={topSectionRef} className="section content">
         <div className="message-box mb-4">
-          <h3>🎉 Happy Birthday Sakshi 🎉</h3>
+          <h3>🎉Wishing you A Very Very Happy Birthday <strong>Sakshi</strong> 🎉</h3>
         </div>
 
         {!isPlaying && (
@@ -84,7 +84,7 @@ function App() {
       <div ref={nextSectionRef} className="section next-section">
         <div className="surprise-box mb-4">
           <h2>🎁 Surprise Awaits!</h2>
-          <p>Wishing you a fantastic birthday filled with love, laughter, and endless joy! 🎉🎂</p>
+          <p>Wishing you a fantastic birthday filled with love, laughter, and endless joy! 🎉🎂 May this special day bring you happiness, success, and beautiful memories to cherish forever. 🥳✨</p>
 
           {/* Image Collage */}
           <div className="image-collage">
