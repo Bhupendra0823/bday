@@ -6,7 +6,7 @@ import collage1 from './assets/1.jpeg';
 import collage2 from './assets/5.jpeg';
 import collage3 from './assets/3.jpeg';
 import collage4 from './assets/4.jpeg';
-import voucher from './assets/voucher.png';
+// import voucher from './assets/voucher.png';
 
 function App() {
   const audioRef = useRef(null);
@@ -21,7 +21,7 @@ function App() {
   const [dobInput, setDobInput] = useState(""); // State for input field
   const [giftRevealed, setGiftRevealed] = useState(false);
   const correctDOB = "2302"; // Expected DOB format
-  const voucherCode = "https://www.amazon.in/g/M7LQDHHSERM3R1R9?ref=gc_utyp"; // Your gift voucher code
+  // const voucherCode = "";  Your gift voucher code
   const [error, setError] = useState(""); // State for error message
 
 
@@ -140,12 +140,12 @@ function App() {
           {giftRevealed && (
             <div className="gift-content">
               {/* Gift Image */}
-              <img src={voucher} alt="Gift Voucher" className="voucher-image mb-3" />
+              {/* <img src={voucher} alt="Gift Voucher" className="voucher-image mb-3" /> */}
 
               {/* Voucher Code */}
               <div className="voucher-box">
                 🎉 <strong>
-                  <a
+                  {/* <a
                     href={voucherCode}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -156,7 +156,8 @@ function App() {
                     }}
                   >
                     {voucherCode}
-                  </a>
+                  </a> */}
+                  Gift Recieved !!
                 </strong> 🎊
               </div>
             </div>
